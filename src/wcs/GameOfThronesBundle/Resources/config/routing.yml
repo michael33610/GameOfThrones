@@ -1,3 +1,8 @@
 wcs_game_of_thrones_homepage:
     path:     /
     defaults: { _controller: wcsGameOfThronesBundle:Default:index }
+
+
+wcs_game_of_thrones_visu:
+    path:     /visu/{id}
+    defaults: { _controller: wcsGameOfThronesBundle:Default:showPersonnage }

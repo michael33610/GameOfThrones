@@ -73,6 +73,19 @@ class DefaultController extends Controller
 		$em->flush();
 
 
+
+
+
 		return $this->render('wcsGameOfThronesBundle:Default:index.html.twig');
+    }
+
+
+
+    public function showPersonnageAction($id){
+
+    	$em = $this->getDoctrine()->getManager();
+    	$personnage = $em->getRepository('wcsGameOfThronesBundle:Personnage')->findById($id);
+
+
     }
 }
